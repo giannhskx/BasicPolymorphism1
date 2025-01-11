@@ -10,34 +10,33 @@ namespace CorporatePolymorphism
             //*********************************
             //******* Task3 Test Code *********
             //*********************************
-            Employee hrRep = new HR();
+            //Employee hrRep = new HR();
 
-            hrRep.ClockIn();
-            hrRep.Work();
-            hrRep.SubmitDailyReport();
-            Console.WriteLine(); //Line break
-                                 //*********************************
-                                 //******* Task3 Test Code *********
-                                 //*********************************
-                                 //
-                                 //  Employee Eng = new Engineer();
+            //hrRep.ClockIn();
+            //hrRep.Work();
+            //hrRep.SubmitDailyReport();
+            //Console.WriteLine(); //Line break
+            //*********************************
+            //******* Task3 Test Code *********
+            //*********************************
+                                 
 
-            //
+            
             Employee employee1 = new Engineer();
             employee1.SubmitDailyReport();
             Console.WriteLine(); // line break
                                  //manager
-            Employee manager = new Manager();
-            manager.ClockIn();
-            manager.Work();
-            manager.SubmitDailyReport();
-            Console.WriteLine(); //line break
-                                 //intern
-            Employee intern = new Intern();
-            intern.ClockIn();
-            intern.Work();
-            intern.SubmitDailyReport();
-            Console.WriteLine();//another line break
+            //Employee manager = new Manager();
+            //manager.ClockIn();
+            //manager.Work();
+            //manager.SubmitDailyReport();
+            //Console.WriteLine(); //line break
+            //                     //intern
+            //Employee intern = new Intern();
+            //intern.ClockIn();
+            //intern.Work();
+            //intern.SubmitDailyReport();
+            //Console.WriteLine();//another line break
 
             //downcasting engineer
             Engineer engineer1 = (Engineer)employee1;
@@ -62,7 +61,7 @@ namespace CorporatePolymorphism
             employees.Add(employee3);
             employees.Add(employee4);
 
-
+            // loop through each one
             foreach (Employee employee in employees)
             {
                 if (employee is Engineer)
